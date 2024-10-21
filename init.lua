@@ -954,3 +954,13 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- custom configuration
+--
+
+-- nodeのパスを指定
+if vim.env.NVIM_NODE then
+  vim.env.PATH = vim.env.NVIM_NODE .. ':' .. vim.env.PATH
+end
+
+vim.opt.expandtab = true
