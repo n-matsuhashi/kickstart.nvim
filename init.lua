@@ -972,10 +972,7 @@ require('lazy').setup({
 
 -- custom configuration
 --
-
--- nodeのパスを指定
-if vim.env.NVIM_NODE then
-  vim.env.PATH = vim.env.NVIM_NODE .. ':' .. vim.env.PATH
-end
-
 vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
