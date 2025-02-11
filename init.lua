@@ -976,3 +976,8 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
+
+-- Set node path
+if vim.env.NVIM_NODE then
+  vim.env.PATH = vim.env.NVIM_NODE .. ':' .. vim.env.PATH
+end
